@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>Acceso de usuario</title>
+		<meta charset="utf-8"/>
+	</head>
+	<body>
+		<h3><p align=center>Acceso de usuario<br><hr></h3>
+		Introduzca su usuario y clave para acceder al sistema:<br><br>
+		<form method = "POST" action = "./accesousuario">
+			<table border ="5" width="500" align= "center">
+				<tbody style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(200, 100, 0, 0.3);">
+					<tr><!--SEGUNDA FILA-->
+						<td align="center" valign="top">
+							<b>Nombre de usuario</b>
+						</td>
+						<td align="center" valign="top">
+							<input type="text" size="15" align=center maxlength="10" name="nombre">
+						</td>
+					</tr>
+					<tr><!--Tercera FILA-->
+						<td align="center" valign="top">
+							<b>Clave (8 caracteres)</b>
+						</td>
+						<td align="center" valign="top">
+							<input type="password" size="15" align=center minlength="8" maxlength="8" name="password">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<br><input type = "submit" value = "Acceder"><br>
+		</form>
+		<button><a href = "/">Volver</a><br></button><br>
+		{{aerror|safe}}
+	</body>
+</html>

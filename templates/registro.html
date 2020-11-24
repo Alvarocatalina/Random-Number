@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>Registro de usuario</title>
+	</head>
+	<body>
+		<h3><p align=center>Registro de usuario<br><hr></h3>
+		Introduzca sus datos para registrarse:<br><br>
+		<form method = "POST" action = "./acceso">
+			<table border ="5" width="500" align= "center">
+				<tbody style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(200, 100, 0, 0.3);">
+					<tr><!--PRIMERA FILA-->
+						<td align="center" valign="top">
+							<b>Correo electronico</b>
+						</td>
+						<td align="center" valign="top">
+							<input type="email" size="15" align=center maxlength="30" name="correo">
+						</td>
+					</tr>
+					<tr><!--SEGUNDA FILA-->
+						<td align="center" valign="top">
+							<b>Nombre de usuario</b>
+						</td>
+						<td align="center" valign="top">
+							<input type="text" size="15" align=center maxlength="10" name="nombre">
+						</td>
+					</tr>	
+					<tr><!--Tercera FILA-->
+						<td align="center" valign="top">
+							<b>Clave (8 caracteres)</b>
+						</td>
+						<td align="center" valign="top">
+							<input type="password" size="15" align=center minlength="8" maxlength="8" name="Password1">
+						</td>
+					</tr>
+					<tr><!--CUARTA FILA-->
+						<td align="center" valign="top">
+							<b>Repita su clave</b>
+						</td>
+						<td align="center" valign="top">
+							<input type="password" size="15" align=center minlength="8" maxlength="8" name="Password2">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		  <br><input type = "submit" value = "Registrarse"><br>
+		</form>
+		<button><a href = "/">Volver</a><br></button><br>
+		{{rerror|safe}}
+	</body>
+</html>

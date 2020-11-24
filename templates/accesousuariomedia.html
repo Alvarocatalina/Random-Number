@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>login</title>
+	</head>
+	<body>
+		<h3><p align=center>Sesion de {{ussesion|safe}} activa<br><hr></h3>
+		El numero aleatorio capturado es:
+		<span style="border-image: initial; border: 1px solid black;">{{numeroaleatorio|safe}}<br></span><br>
+		La media de la base de datos {{mediabbdd|safe}} es: <span style="border-image: initial; border: 1px solid black;">{{mediaTS|safe}}</span>
+		<button><a href = "/accesousuariomedia">Calcular media de ThingSpeak</a></button>
+		<button><a href = "/accesousuariomediaRE">Calcular media de Redis</a></button><br><br>
+		El numero de medias de ThingSpeak (bbdd externa) solicitadas es: <span style="border-image: initial; border: 1px solid black;">{{mediasTS|safe}}<br></span><br>
+		El numero de medias de Redis (bbdd local) solicitadas es: <span style="border-image: initial; border: 1px solid black;">{{mediasRD|safe}}<br></span><br>
+		<form action="/accesousuarioumbral" method="POST">
+			Introduza un valor umbral para calcular los ultimos 5 numeros que superaron dicho umbral:
+			<input type="number" step="any" size="5" min="1" max="99" name="wumbral" placeholder="Umbral">&nbsp;
+			<input type="submit" name="text" value="Visualizar valores">
+		</form>
+		<button><a href = "/accesousuariografica">Visualizar la grafica de ThingSpeak</a></button><br><br> 
+		<button><a href = "/">Salir de la sesion</a></button>
+	</body>
+</html> 
